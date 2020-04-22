@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-const MissionForm = props => {
-  const handleGetData = e => {
+const MissionForm = ({ getData, isFetchingData }) => {
+  const handleGetData = (e) => {
     e.preventDefault();
-    props.getData();
+    getData();
   };
 
   return (
     <>
-      {props.isFetchingData ? (
+      {isFetchingData ? (
         <div>we are fetching data</div>
       ) : (
         <button onClick={handleGetData}>Get Data</button>
