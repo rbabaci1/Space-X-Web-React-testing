@@ -8,7 +8,11 @@ const MissionsList = ({ missions, error }) => {
       ) : (
         <div>
           {missions.map((mission) => (
-            <div className='mission' key={mission.mission_id}>
+            <div
+              className='mission'
+              key={mission.mission_id}
+              data-testid='a_mission'
+            >
               {mission.mission_name}
             </div>
           ))}
