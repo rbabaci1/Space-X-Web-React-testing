@@ -11,7 +11,9 @@ const MissionForm = ({ getData, isFetchingData }) => {
       {isFetchingData ? (
         <div>we are fetching data</div>
       ) : (
-        <button onClick={handleGetData}>Get Data</button>
+        <button onClick={handleGetData} data-testid='fetch-btn'>
+          Get Data
+        </button>
       )}
     </>
   );
