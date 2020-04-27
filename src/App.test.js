@@ -5,8 +5,6 @@ import App from './App';
 
 jest.mock('./api/fetchMissions');
 
-// console.log(mockFetchMissions);
-
 it('App fetches missions and render data', async () => {
   const mockData = { data: [{ mission_id: 1, mission_name: 'mission one' }] };
 

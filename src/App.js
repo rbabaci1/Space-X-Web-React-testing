@@ -13,7 +13,6 @@ export default function App() {
 
     fetchMissions()
       .then((res) => {
-        console.log(res);
         setIsFetchingData(false);
         setMissions(res.data);
       })
